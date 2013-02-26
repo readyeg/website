@@ -1,9 +1,9 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="js/jquery/jquery-ui-1.10.1.custom/css/sunny/jquery-ui-1.10.1.custom.css">
+		<!--link rel="stylesheet" type="text/css" href="js/jquery/jquery-ui-1.10.1.custom/css/sunny/jquery-ui-1.10.1.custom.css"-->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type='text/javascript' src='js/jquery/jquery-ui-1.10.1.custom/js/jquery-1.9.1.js'></script>
-		<script type='text/javascript' src='js/jquery/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js'></script>
+		<!--script type='text/javascript' src='js/jquery/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js'></script-->
 		<script type='text/javascript' src='js/script.js'></script>
 	</head>
 
@@ -12,20 +12,30 @@
 	</div>
 	
 	<div title='horizontal navigation bar' class='horizontal_navigation_bar border_t' id='horizontal-tabs'>
-		<ul>
-			<li><a href='#horizontal-tab1'>Tab 1</a></li>
-			<li><a href='#horizontal-tab2'>Tab 2</a></li>
-			<li><a href='#horizontal-tab3'>Tab 3</a></li>
+		<ul id='tab-names' class='horizontal-tab-names' style='width: 857px; margin-left: auto; margin-right: auto'>
+			<li id='about_us'>About Us</li>
+			<li id='college_applications'>College Applications</li>
+			<li id='early_guidance'>Early Guidance</li>
+			<li id='success_stories'>Success Stories</li>
+			<li id='admission_resources'>Admission Resources</li>
 		</ul>
-		<div id='horizontal-tab1'>
+	
+		<div id='about_us_content' class='horizontal-tab-content-hide border_t'>
 			<p>Tab content 1</p>
 		</div>
-		<div id='horizontal-tab2'>
+		<div id='college_applications_content' class='horizontal-tab-content-hide border_t'>
 			<p>Tab content 2</p>
 		</div>
-		<div id='horizontal-tab3'>
+		<div id='early_guidance_content' class='horizontal-tab-content-hide border_t'>
 			<p>Tab content 3</p>
 		</div>
+		<div id='success_stories_content' class='horizontal-tab-content-hide border_t'>
+			<p>Tab content 4</p>
+		</div>
+		<div id='admission_resources_content' class='horizontal-tab-content-hide border_t'>
+			<p>Tab content 5</p>
+		</div>
+		
 	</div>
 
 	<div title='main content - mission statement etc.' class='main_content'>
