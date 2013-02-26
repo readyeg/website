@@ -1,0 +1,71 @@
+
+/* Style for the entire page */
+body {
+	margin: 1px 5px 5px 5px;
+}
+
+/* Border for debugging purpose */
+.border_t {
+	border-style: solid;
+	border-width: 1px;
+}
+
+.page_header {
+	height: 100px;
+	margin-bottom: 5px;
+}
+
+.horizontal_navigation_bar {
+	height: 30px;
+	margin-bottom: 5px;
+}
+
+.main_content {
+	height: 400px;
+	margin-bottom: 5px;
+}
+
+.display_area {
+	height: 100%;
+	width: 70%;
+	float: left;
+}
+
+.big_buttons_area {
+	height: 100%;
+	width: 28%;
+	float: right;
+}
+
+.big_button {
+	height: 31%;
+	width: 90%;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.products {
+	height: 300px;
+}
+
+.products .product_1, .products .product_2{
+	width: 48%;
+	height: 96%;
+}
+
+.products .product_1{
+	float: left;
+	margin: 5px 0 5px 14px;
+}
+
+.products .product_2{
+	float: right;
+	margin: 5px 14px 5px 0;
+}
+
+.lower_content {
+	height: 50px;
+	margin-top: 5px;
+}
