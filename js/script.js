@@ -9,9 +9,15 @@ $(document).ready(function(){
 		var $id = $(this).attr('id');
 		var $contentDiv = $('#' + $id + '_content');
 
+		var $docWidth = $(document).width();
+		var leftMargin = 0.17 * $docWidth;			// Left margin is 17% of page width
+		var contentDivWidth = 0.60 * $docWidth;		// Total width is 60% of page width
+
 		$contentDiv
-			.removeClass('horizontal-tab-content-hide')
-			.addClass('horizontal-tab-content-show');
+			.removeClass('hide')
+			.addClass('horizontal-tab-content-show')
+			.css('width', contentDivWidth)
+			.css('margin-left', leftMargin);
 	});
 
 	$('#horizontal-tabs ul li').mouseleave(function(){
@@ -23,60 +29,20 @@ $(document).ready(function(){
 			function(){
 				$contentDiv
 					.removeClass('horizontal-tab-content-show')
-					.addClass('horizontal-tab-content-hide');
+					.addClass('hide');
 				}, 
 			300);
 	});
 
-
-	$('#about_us_content').mouseenter(function(){
+	
+	$('#horizontal-tabs #contents div').mouseenter(function(){
 		clearTimeout(tabTimeout);
 	});
 
-	$('#about_us_content').mouseleave(function(){
+	$('#horizontal-tabs #contents div').mouseleave(function(){
 		$(this)
 			.removeClass('horizontal-tab-content-show')
-			.addClass('horizontal-tab-content-hide');
-	});
-
-	$('#college_applications_content').mouseenter(function(){
-		clearTimeout(tabTimeout);
-	});
-
-	$('#college_applications_content').mouseleave(function(){
-		$(this)
-			.removeClass('horizontal-tab-content-show')
-			.addClass('horizontal-tab-content-hide');
-	});
-
-	$('#early_guidance_content').mouseenter(function(){
-		clearTimeout(tabTimeout);
-	});
-
-	$('#early_guidance_content').mouseleave(function(){
-		$(this)
-			.removeClass('horizontal-tab-content-show')
-			.addClass('horizontal-tab-content-hide');
-	});
-
-	$('#success_stories_content').mouseenter(function(){
-		clearTimeout(tabTimeout);
-	});
-
-	$('#success_stories_content').mouseleave(function(){
-		$(this)
-			.removeClass('horizontal-tab-content-show')
-			.addClass('horizontal-tab-content-hide');
-	});
-
-	$('#admission_resources_content').mouseenter(function(){
-		clearTimeout(tabTimeout);
-	});
-
-	$('#admission_resources_content').mouseleave(function(){
-		$(this)
-			.removeClass('horizontal-tab-content-show')
-			.addClass('horizontal-tab-content-hide');
+			.addClass('hide');
 	});
 
 });
