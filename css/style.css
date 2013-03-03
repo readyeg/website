@@ -26,6 +26,7 @@ body {
 .main_content {
 	height: 400px;
 	margin-bottom: 5px;
+	margin-left: 20px;
 }
 
 .display_area {
@@ -54,18 +55,21 @@ body {
 }
 
 .products .product_1, .products .product_2{
-	width: 48%;
+	width: 39%;
 	height: 96%;
+	background-repeat: no-repeat;
 }
 
 .products .product_1{
 	float: left;
-	margin: 5px 0 5px 14px;
+	margin: 5px 0 5px 73px;
+	background-image: url('img/collegeapplicationsbutton.jpg');
 }
 
 .products .product_2{
 	float: right;
-	margin: 5px 14px 5px 0;
+	margin: 5px 70px 5px 0;
+	background-image: url('img/earlyguidancebutton.jpg');
 }
 
 .lower_content {
