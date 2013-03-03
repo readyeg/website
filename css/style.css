@@ -3,6 +3,7 @@
 body {
 	margin: 1px 5px 5px 5px;
 	min-width: 1000px;
+	background-image: url('img/orange_stripes_bkg.png');
 }
 
 /* Border for debugging purpose */
@@ -104,6 +105,70 @@ body {
 	background-color: lightblue;
 	/*margin-top: -15.5px;*/
 }
+
+
+/*-----------------------Start Header-------------------------*/
+.page_header {
+	height: 100px;
+	margin-bottom: 5px;
+}
+
+#logoArea {
+	height: 90%;
+	width: 65%;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+#contactArea {
+	height: 90%;
+	width: 33%;
+	float: right;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+#telephoneArea {
+	height: 40%;
+	width: 90%;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#telephoneArea p {
+	margin-top: 5px;
+	margin-bottom: 5px;	
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-size: 1.3em;
+	position: absolute;
+}
+
+#contactButtonArea {
+	height: 40%;
+	width: 90%;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+	margin-left: auto;
+	margin-right: auto;
+}	
+
+.contactButton {
+	margin-right: 5px;
+	margin-left: 60px;
+}
+
+.fb {
+	position: absolute;
+	margin-right: 65px;
+}
+/*-----------------End Header----------------------------*/
 
 
 
