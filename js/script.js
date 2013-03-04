@@ -11,9 +11,13 @@ $(document).ready(function(){
 		var $id = $(this).attr('id');
 		var $contentDiv = $('#' + $id + '_content');
 
-		var $docWidth = $(document).width();
-		var leftMargin = $(this).offset().left - 6;			
-		var contentDivWidth = 0.20 * $docWidth;		
+		var docWidth = $(document).width();
+		var contentDivWidth = 0.20 * docWidth;		
+		var mainContentWidth = $('#main_container').width();
+
+		var emptySpace = (docWidth - mainContentWidth) / 2;		// Unused space on either side of the contents
+
+		var leftMargin = $(this).offset().left - emptySpace;	
 
 		$activeNavButton = $(this);
 		$activeNavButton.css('background-color', navButtonPressColor);
