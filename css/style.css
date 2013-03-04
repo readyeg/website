@@ -2,6 +2,8 @@
 /* Style for the entire page */
 body {
 	margin: 1px 5px 5px 5px;
+	min-width: 1000px;
+	background-image: url('img/orange_stripes_bkg.png');
 }
 
 /* Border for debugging purpose */
@@ -16,13 +18,15 @@ body {
 }
 
 .horizontal_navigation_bar {
-	height: 30px;
+	/*height: 400px;*/
 	margin-bottom: 5px;
+	background-image: url('img/orange_dual.jpg');
 }
 
 .main_content {
 	height: 400px;
 	margin-bottom: 5px;
+	margin-left: 20px;
 }
 
 .display_area {
@@ -51,21 +55,130 @@ body {
 }
 
 .products .product_1, .products .product_2{
-	width: 48%;
+	width: 39%;
 	height: 96%;
+	background-repeat: no-repeat;
 }
 
 .products .product_1{
 	float: left;
-	margin: 5px 0 5px 14px;
+	margin: 5px 0 5px 73px;
+	background-image: url('img/collegeapplicationsbutton.jpg');
 }
 
 .products .product_2{
 	float: right;
-	margin: 5px 14px 5px 0;
+	margin: 5px 70px 5px 0;
+	background-image: url('img/earlyguidancebutton.jpg');
 }
 
 .lower_content {
 	height: 50px;
 	margin-top: 5px;
 }
+
+.horizontal_navigation_bar .horizontal-tab-names {
+	margin: 0 auto 0 auto;
+	width: 857px;
+	height: 50px;
+
+}
+
+.horizontal_navigation_bar .horizontal-tab-names li {
+	display: inline-block;
+	padding: 15.3px 20px;
+}
+
+.horizontal_navigation_bar .horizontal-tab-names .horizontal_tab_name {
+	margin-left: auto;	
+	margin-right: auto;
+	width: 857px;
+}
+
+.hide{
+	display:none;
+}
+
+.horizontal-tab-content-show {
+	display: block;
+	min-width: 300px;
+	height: 240px;
+	padding-top: 16px;
+	position: absolute;
+	z-index: 2;
+	background-color: lightblue;
+	/*margin-top: -15.5px;*/
+}
+
+
+/*-----------------------Start Header-------------------------*/
+.page_header {
+	height: 100px;
+	margin-bottom: 5px;
+}
+
+#logoArea {
+	height: 90%;
+	width: 65%;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+#contactArea {
+	height: 90%;
+	width: 33%;
+	float: right;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+#telephoneArea {
+	height: 40%;
+	width: 90%;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#telephoneArea p {
+	margin-top: 5px;
+	margin-bottom: 5px;	
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-size: 1.3em;
+	position: absolute;
+}
+
+#contactButtonArea {
+	height: 40%;
+	width: 90%;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+	margin-left: auto;
+	margin-right: auto;
+}	
+
+.contactButton {
+	margin-right: 5px;
+	margin-left: 60px;
+}
+
+.fb {
+	position: absolute;
+	margin-right: 65px;
+}
+/*-----------------End Header----------------------------*/
+
+
+
+/* Over-ride jquery theme */
+/*
+#horizontal-tabs.ui-widget {
+	font-size: 0.86em;
+}
+*/
