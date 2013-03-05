@@ -1,115 +1,42 @@
 
-/* Style for the entire page */
+/*-----------------------Style for the entire page-----------------------*/
 body {
 	margin: 1px 5px 5px 5px;
 	min-width: 1000px;
 	background-image: url('img/orange_stripes_bkg.png');
 }
 
-/* Border for debugging purpose */
+/*-----------------------Global Typography Styles-----------------------*/
+h1,h2,h3,h4,h5,h6,p,address,blockquote,div,ul,li {
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	color: #383838;
+	line-height: 1.5;
+	margin-bottom: 5px;
+	
+}
+
+a:link, a:visited {
+	color: #01b8ed;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+a:hover, a:active {
+	color: #387DEB;
+	text-decoration: none;
+	border-bottom:none;
+}
+
+/*-----------------------Border for debugging purpose-----------------------*/
 .border_t {
 	border-style: solid;
 	border-width: 1px;
 }
-
-.page_header {
-	height: 100px;
-	margin-bottom: 5px;
-}
-
-.horizontal_navigation_bar {
-	/*height: 400px;*/
-	margin-bottom: 5px;
-	background-image: url('img/orange_dual.jpg');
-}
-
-.main_content {
-	height: 400px;
-	margin-bottom: 5px;
-	margin-left: 20px;
-}
-
-.display_area {
-	height: 100%;
-	width: 70%;
-	float: left;
-}
-
-.big_buttons_area {
-	height: 100%;
-	width: 28%;
-	float: right;
-}
-
-.big_button {
-	height: 31%;
-	width: 90%;
-	margin-top: 5px;
-	margin-bottom: 5px;	
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.products {
-	height: 300px;
-}
-
-.products .product_1, .products .product_2{
-	width: 39%;
-	height: 96%;
-	background-repeat: no-repeat;
-}
-
-.products .product_1{
-	float: left;
-	margin: 5px 0 5px 73px;
-	background-image: url('img/collegeapplicationsbutton.jpg');
-}
-
-.products .product_2{
-	float: right;
-	margin: 5px 70px 5px 0;
-	background-image: url('img/earlyguidancebutton.jpg');
-}
-
-.lower_content {
-	height: 50px;
-	margin-top: 5px;
-}
-
-.horizontal_navigation_bar .horizontal-tab-names {
-	margin: 0 auto 0 auto;
-	width: 857px;
-	height: 50px;
-
-}
-
-.horizontal_navigation_bar .horizontal-tab-names li {
-	display: inline-block;
-	padding: 15.3px 20px;
-}
-
-.horizontal_navigation_bar .horizontal-tab-names .horizontal_tab_name {
-	margin-left: auto;	
-	margin-right: auto;
-	width: 857px;
-}
-
-.hide{
-	display:none;
-}
-
-.horizontal-tab-content-show {
-	display: block;
-	min-width: 300px;
-	height: 240px;
-	padding-top: 16px;
-	position: absolute;
-	z-index: 2;
-	background-color: lightblue;
-	/*margin-top: -15.5px;*/
-}
-
 
 /*-----------------------Start Header-------------------------*/
 .page_header {
@@ -173,6 +100,372 @@ body {
 	margin-right: 65px;
 }
 /*-----------------End Header----------------------------*/
+
+
+/*-----------------Start Nav-----------------*/
+.horizontal_navigation_bar {
+	/*height: 400px;*/
+	margin-bottom: 5px;
+	background-image: url('img/orange_dual.jpg');
+}
+
+.horizontal_navigation_bar .horizontal-tab-names {
+	margin: 0 auto 0 auto;
+	width: 857px;
+	height: 50px;
+
+}
+
+.horizontal_navigation_bar .horizontal-tab-names li {
+	display: inline-block;
+	padding: 15.3px 20px;
+}
+
+.horizontal_navigation_bar .horizontal-tab-names .horizontal_tab_name {
+	margin-left: auto;	
+	margin-right: auto;
+	width: 857px;
+}
+
+.hide{
+	display:none;
+}
+
+.horizontal-tab-content-show {
+	display: block;
+	min-width: 300px;
+	height: 240px;
+	padding-top: 16px;
+	position: absolute;
+	z-index: 2;
+	background-color: lightblue;
+	/*margin-top: -15.5px;*/
+}
+/*-----------------End Nav-----------------*/
+
+
+/*-----------------Start Homepage-----------------*/
+.main_content {
+	height: 400px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+}
+
+.display_area {
+	height: 100%;
+	width: 70%;
+	float: left;
+}
+
+.big_buttons_area {
+	height: 100%;
+	width: 28%;
+	float: right;
+}
+
+.big_button {
+	height: 31%;
+	width: 90%;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.products {
+	height: 300px;
+}
+
+.products .product_1, .products .product_2{
+	width: 39%;
+	height: 96%;
+	background-repeat: no-repeat;
+}
+
+.products .product_1{
+	float: left;
+	margin: 5px 0 5px 73px;
+	background-image: url('img/collegeapplicationsbutton.jpg');
+}
+
+.products .product_2{
+	float: right;
+	margin: 5px 70px 5px 0;
+	background-image: url('img/earlyguidancebutton.jpg');
+}
+/*-----------------End Homepage-----------------*/
+
+
+/*-----------------------Start About Us > Mission Page-----------------------*/
+#mission {
+	height: 350px;
+	margin: 20px 30px 20px 30px;
+}
+
+#mission h2 {
+	font-size: 1.2em;
+	color: #424242;
+	margin-left: 40px;
+}
+
+#mission p {
+	margin-top: 12px;
+	margin-left: 40px;
+	margin-right:40px;
+}
+
+#premaze {
+	font-size: 1.2em;
+	font-style: italic;
+	display: block;
+	margin: 20px 30px 20px 70px;
+}
+
+#maze {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*-----------------------End About Us > Mission Page-----------------------*/
+
+
+/*-----------------------Start About Us > Team Page-----------------------*/
+/*-----------------------End About Us > Team Page-----------------------*/
+
+
+/*-----------------------Start College Applications Page-----------------------*/
+#collegeapp {
+	height: 280px;
+	margin: 20px 30px 20px 30px;
+}
+
+#collegeapp h2 {
+	font-size: 1.2em;
+	margin-left: 40px;
+	margin-bottom:0.5em;
+}
+
+#collegeapp p {
+	margin-left: 40px;
+	margin-right:40px;
+	margin-bottom:1.0em;
+}
+
+#psproducts {
+	height: 450px;
+	background-color: #F1F1F1;
+}
+
+#psproducts #pspremier, #psproducts #psstandard {
+	width: 400px;
+	height: 95%;
+	background-color: white;
+	border-radius: 15px;
+}
+	
+#psproducts #pspremier ul, #psproducts #psstandard ul{
+	list-style:none;
+}
+
+#psproducts #pspremier {
+	float: left;
+	margin: 5px 0 5px 70px;
+}
+
+#psproducts #pspremier li {
+	font-weight: bold;
+	font-style: italic;
+	color: #383838;
+	padding: 0 40px 20px 65px;
+	background-image: url('img/goldmedal.jpg');
+	background-position: 5% 0%;
+	background-repeat: no-repeat;
+}
+
+#psproducts #psstandard {
+	float: right;
+	margin: 5px 70px 5px 0;
+}
+
+#psproducts #psstandard li {
+	font-weight: bold;
+	font-style: italic;
+	color: #383838;
+	padding: 0 40px 20px 65px;
+	background-image: url('img/silvermedal.jpg');
+	background-position: 5% 0%;
+	background-repeat: no-repeat;
+}
+/*-----------------------End College Applications Page-----------------------*/
+
+
+/*-----------------------Start College Applications > Premier Details Page-----------------------*/
+/*-----------------------End College Applications > Premier Details Page-----------------------*/
+
+
+/*-----------------------Start Early Guidance Page-----------------------*/
+/*-----------------------End Early Guidance Page-----------------------*/
+
+
+/*-----------------------Start Success Stories > Our Student's Schools Page-----------------------*/
+/*-----------------------End Success Stories > Our Student's Schools Page-----------------------*/
+
+
+/*-----------------------Start Success Stories > Testimonials Page-----------------------*/
+/*-----------------------End Success Stories > Testimonials Page-----------------------*/
+
+
+/*-----------------------Start Success Stories > Success Stories Page-----------------------*/
+/*-----------------------End Success Stories > Success Stories Page-----------------------*/
+
+
+/*-----------------------Start Admission Resources > Why Hire Page-----------------------*/
+#whyhire {
+	height: 750px;
+	margin: 20px 30px 20px 30px;
+}
+
+#whyhire h2 {
+	font-size: 1.2em;
+	color: #424242;
+	margin-top: 30px;
+	margin-left: 40px;
+	margin-bottom: 15px;
+}
+
+#whyhire p {
+	margin-top: 15px;
+	margin-left: 40px;
+	margin-right:40px;
+}
+/*-----------------------End Admission Resources > Why Hire Page-----------------------*/
+
+
+/*-----------------------Start Admission Resources > Key Statistics Page-----------------------*/
+#keystats {
+	height: 700px;
+	margin: 20px 30px 20px 30px;
+}
+
+#keystats h2 {
+	font-size: 1.2em;
+	color: #444444;
+	margin-left: 40px;
+}
+
+#keystats p {
+	margin-left: 40px;
+	margin-right:40px;
+	margin-top: 5px;
+}
+
+#keystats table{
+	margin-left: 80px
+}
+
+#keystats th {
+	text-align: left;
+	border-bottom: 2px solid black;
+	padding-bottom: 10px;
+}
+
+#keystats td {
+	text-align: left;
+	padding-top: 5px;
+}
+
+.schoolname {
+	padding-right: 300px;
+}
+
+.twelve {
+	padding-right: 50px;
+}
+
+.eleven {
+	padding-right: 50px;
+}
+
+.ten {
+	padding-right: 50px;
+}
+/*-----------------------End Admission Resources > Key Statistics Page-----------------------*/
+
+
+/*-----------------------Start Admission Resources > 8 Steps Page-----------------------*/
+#tipcontent {
+	height: 100%;
+	margin: 20px 30px 20px 30px;
+}
+
+#tipcontent h1 {
+	font-size: 1.6em;
+	color: #000000;
+	margin-left: 40px;
+}
+
+.top8tips {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+
+#tipcontent .tipintro {
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+
+#tipcontent ol { 
+	margin-left: 80px; 
+	margin-right:80px; 
+	margin-top:10px; 
+	font-style:italic; 
+	font-size:30px; 
+	color:#FE8431;  
+}
+
+#tipcontent ol li p { 
+	padding:8px; 
+	font-style:normal; 
+	font-weight: normal; 
+	font-size:16px; 
+}
+
+#tipcontent ol li p strong { 
+	font-size:22px; 
+	color: #2d2d2d; 
+	display:block; 
+}
+/*-----------------------End Admission Resources > 8 Steps Page-----------------------*/
+
+
+/*-----------------Start Footer-----------------*/
+.lower_content {
+	background-color: #f1f1f1;
+	height: 50px;
+	margin-top: 20px;
+}
+
+#footer li {
+	display: inline;
+	list-style: none;
+	padding-right: 40px;
+	font-size: 0.8em;
+	font-style: italic;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+#footer #allRightsReserved {
+	display: inline;
+	list-style: none;
+	padding-left: 100px;
+	padding-right: 0;
+	font-style: normal;
+}
+/*-----------------End Footer-----------------*/
+
+
+
 
 
 
