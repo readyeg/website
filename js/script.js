@@ -8,8 +8,8 @@ $(document).ready(function(){
 
 	$('#horizontal-tabs ul li').mouseenter(function(){
 
-		var $id = $(this).attr('id');
-		var $contentDiv = $('#' + $id + '_content');
+		var id = $(this).attr('id');
+		var $contentDiv = $('#' + id + '_content');
 
 		var docWidth = $(document).width();
 		var contentDivWidth = 0.20 * docWidth;		
@@ -31,8 +31,8 @@ $(document).ready(function(){
 
 	$('#horizontal-tabs ul li').mouseleave(function(){
 
-		var $id = $(this).attr('id');
-		var $contentDiv = $('#' + $id + '_content');
+		var id = $(this).attr('id');
+		var $contentDiv = $('#' + id + '_content');
 
 		$activeNavButton.css('background-color', '');
 
@@ -55,6 +55,33 @@ $(document).ready(function(){
 		$(this)
 			.removeClass('horizontal-tab-content-show')
 			.addClass('hide');
+	});
+
+	$('#big_buttons div').click(function(){
+
+		var btn_id = $(this).attr('id');
+		var disp_id = btn_id + '_display';
+		var $img = $(this).find('img');
+		var $disp = $('#' + disp_id);
+		var siblings = $(this).siblings('div');		// Rest of the buttons
+
+		$img.addClass('big_button_pressed');
+		$disp.removeClass('hide');
+		
+		for(var i = 0; i < siblings.length; i++){
+
+			var sib_btn_id = siblings[i].id;
+			var sib_disp_id = sib_btn_id + '_display';
+
+			var $sib_btn = $('#' + sib_btn_id);
+			var $sib_disp = $('#' + sib_disp_id);
+
+			if(sib_btn_id != btn_id) {
+				$sib_btn.find('img').removeClass('big_button_pressed');
+				$sib_disp.addClass('hide');
+			}
+		}
+
 	});
 
 });

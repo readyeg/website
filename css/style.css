@@ -172,6 +172,14 @@ a:hover, a:active {
 	margin-right: auto;
 }
 
+.big_button_pressed {
+	opacity: 0.2;
+}
+
+/*.big_button_unpressed {
+	opacity: 1.0;
+}*/
+
 .products {
 	height: 300px;
 }
