@@ -65,6 +65,7 @@ $(document).ready(function(){
 		var $disp = $('#' + disp_id);
 		var siblings = $(this).siblings('div');		// Rest of the buttons
 
+		$img.removeClass('big_button_unpressed');
 		$img.addClass('big_button_pressed');
 		$disp.removeClass('hide');
 		
@@ -78,6 +79,7 @@ $(document).ready(function(){
 
 			if(sib_btn_id != btn_id) {
 				$sib_btn.find('img').removeClass('big_button_pressed');
+				$sib_btn.find('img').addClass('big_button_unpressed');
 				$sib_disp.addClass('hide');
 			}
 		}
