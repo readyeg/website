@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 		var emptySpace = (docWidth - mainContentWidth) / 2;		// Unused space on either side of the contents
 
-		var leftMargin = $(this).offset().left - emptySpace;	
+		var leftMargin = $(this).offset().left - emptySpace - 5;	// '5' to adjust, may change as style changes...
 
 		$activeNavButton = $(this);
 		$activeNavButton.css('background-color', navButtonPressColor);

@@ -104,9 +104,13 @@ a:hover, a:active {
 
 /*-----------------Start Nav-----------------*/
 .horizontal_navigation_bar {
-	/*height: 400px;*/
-	margin-bottom: 5px;
+	/*margin-bottom: 5px;*/
 	background-image: url('img/orange_dual.jpg');
+	/*margin-left: auto;
+	margin-right: auto;*/
+	margin: 0 auto 5px auto;
+	border-radius: 10px;
+	width: 99%;
 }
 
 .horizontal_navigation_bar .horizontal-tab-names {
@@ -149,13 +153,18 @@ a:hover, a:active {
 	box-shadow: 0px 0px 10px 5px #000000;
 	background-color: white; 
 	width: 1000px; 
-	margin: 0  auto 0 auto;
+	margin: 7  auto 0 auto;
+	border-radius: 10px;
 }
 
 .main_content {
 	height: 400px;
 	margin-bottom: 5px;
-	margin-left: 20px;
+	margin-left: 15px;
+}
+
+.main_content img {
+	border-radius: 10px;
 }
 
 .display_area {
@@ -180,7 +189,7 @@ a:hover, a:active {
 }
 
 .big_button_pressed {
-	opacity: 0.4;
+	opacity: 0.6;
 }
 
 .big_button_unpressed {
@@ -459,6 +468,8 @@ a:hover, a:active {
 	background-color: #f1f1f1;
 	height: 50px;
 	margin-top: 20px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 #footer li {
