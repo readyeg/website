@@ -46,20 +46,20 @@ a:hover, a:active {
 
 #logoArea {
 	height: 90%;
-	width: 65%;
+	/*width: 65%;*/
 	float: left;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	margin-left: 5px;
+	margin-left: 50px;
 }
 
 #contactArea {
 	height: 90%;
-	width: 33%;
+	/*width: 33%;*/
 	float: right;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	margin-right: 5px;
+	margin-right: 100px;
 }
 
 #telephoneArea {
@@ -83,11 +83,11 @@ a:hover, a:active {
 
 #contactButtonArea {
 	height: 40%;
-	width: 90%;
+/*	width: 90%;*/
 	margin-top: 5px;
 	margin-bottom: 5px;	
-	margin-left: auto;
-	margin-right: auto;
+/*	margin-left: auto;*/
+/*	margin-right: auto;*/
 }	
 
 .contactButton {
@@ -95,10 +95,6 @@ a:hover, a:active {
 	margin-left: 60px;
 }
 
-.fb {
-	position: absolute;
-	margin-right: 65px;
-}
 /*-----------------End Header----------------------------*/
 
 
@@ -123,6 +119,8 @@ a:hover, a:active {
 .horizontal_navigation_bar .horizontal-tab-names li {
 	display: inline-block;
 	padding: 15.3px 20px;
+	color: white;
+	font-weight: bold;
 }
 
 .horizontal_navigation_bar .horizontal-tab-names .horizontal_tab_name {
@@ -137,8 +135,8 @@ a:hover, a:active {
 
 .horizontal-tab-content-show {
 	display: block;
-	min-width: 300px;
-	height: 240px;
+	min-width: 280px;
+	height: 120px;
 	padding-top: 16px;
 	position: absolute;
 	z-index: 2;
@@ -149,20 +147,23 @@ a:hover, a:active {
 	box-shadow: 0px 3px 8px #000000;
 }
 
-.horizontal-tab-content-show p{
+.horizontal-tab-content-show p {
+	display: block;
 	margin-left: 19px;
 	margin-bottom: 10px;
+	color: #FE8431;
+	font-weight: bold;
 }
 
 .horizontal-tab-content-show p:hover{
-	font-weight: bold;
+	color: #00a9da;
 }
 /*-----------------End Nav-----------------*/
 
 
 /*-----------------Start Homepage-----------------*/
 #main_container {
-	box-shadow: 0px 0px 10px 5px #000000;
+	box-shadow: 0px 0px 10px 3px #4e4e4e;
 	background-color: white; 
 	width: 1000px; 
 	margin: 0  auto 0 auto;
@@ -171,8 +172,9 @@ a:hover, a:active {
 
 .main_content {
 	height: 400px;
+	margin-top: 10px;
 	margin-bottom: 5px;
-	margin-left: 15px;
+	margin-left: 25px;
 }
 
 .main_content img {
@@ -189,6 +191,7 @@ a:hover, a:active {
 	height: 100%;
 	width: 28%;
 	float: right;
+	margin-right: 15px;
 }
 
 .big_button {
@@ -206,10 +209,11 @@ a:hover, a:active {
 
 .big_button_unpressed {
 	opacity: 1.0;
-	box-shadow: 4px 4px 7px 2px #000000;
+	box-shadow: 4px 4px 7px 1px #4e4e4e;
 }
 
 .products {
+	margin-top: 10px;
 	height: 300px;
 }
 
@@ -480,13 +484,20 @@ a:hover, a:active {
 	background-color: #f1f1f1;
 	height: 50px;
 	margin-top: 20px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+}
+
+#footer {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	width: 857px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	padding-top: 13px;
 }
 
 #footer li {
 	display: inline;
-	list-style: none;
 	padding-right: 40px;
 	font-size: 0.8em;
 	font-style: italic;
