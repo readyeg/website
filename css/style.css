@@ -1,7 +1,7 @@
 
 /*-----------------------Style for the entire page-----------------------*/
 body {
-	margin: 1px 5px 5px 5px;
+	margin: 0px 5px 5px 5px;
 	min-width: 1000px;
 	background-image: url('img/orange_stripes_bkg.png');
 }
@@ -142,8 +142,20 @@ a:hover, a:active {
 	padding-top: 16px;
 	position: absolute;
 	z-index: 2;
-	background-color: lightblue;
-	/*margin-top: -15.5px;*/
+/*	background-color: #FFB07C;*/
+	background-color: white;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0px 3px 8px #000000;
+}
+
+.horizontal-tab-content-show p{
+	margin-left: 19px;
+	margin-bottom: 10px;
+}
+
+.horizontal-tab-content-show p:hover{
+	font-weight: bold;
 }
 /*-----------------End Nav-----------------*/
 
@@ -153,8 +165,8 @@ a:hover, a:active {
 	box-shadow: 0px 0px 10px 5px #000000;
 	background-color: white; 
 	width: 1000px; 
-	margin: 7  auto 0 auto;
-	border-radius: 10px;
+	margin: 0  auto 0 auto;
+	/*border-radius: 10px;*/
 }
 
 .main_content {

@@ -45,12 +45,12 @@ $(document).ready(function(){
 			10);
 	});
 	
-	$('#horizontal-tabs #contents div').mouseenter(function(){
+	$('#horizontal-tabs #horizontal-navigation-bar-contents div').mouseenter(function(){
 		$activeNavButton.css('background-color', navButtonPressColor);
 		clearTimeout(tabTimeout);
 	});
 
-	$('#horizontal-tabs #contents div').mouseleave(function(){
+	$('#horizontal-tabs #horizontal-navigation-bar-contents div').mouseleave(function(){
 		$activeNavButton.css('background-color', '');
 		$(this)
 			.removeClass('horizontal-tab-content-show')
@@ -85,6 +85,12 @@ $(document).ready(function(){
 		}
 
 	});
+
+/*
+	$('#horizontal-navigation-bar-contents div p').hover(function(){
+		$(this).addClass('font-weight-bold');
+	});
+	*/
 
 });
 
