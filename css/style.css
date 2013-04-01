@@ -340,10 +340,13 @@ a:hover, a:active {
 }
 
 #psproducts #pspremier, #psproducts #psstandard {
-	width: 400px;
+	padding-top: 10px;
+	width: 410px;
 	height: 95%;
 	background-color: white;
 	border-radius: 15px;
+	border-color: #4e4e4e;
+	border-width: 2px;
 }
 	
 #psproducts #pspremier ul, #psproducts #psstandard ul{
@@ -378,6 +381,29 @@ a:hover, a:active {
 	background-image: url('img/silvermedal.jpg');
 	background-position: 5% 0%;
 	background-repeat: no-repeat;
+}
+
+#psproducts #pspremier button {
+	float: left;
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-left: 95px;
+}
+
+#psproducts #psstandard form {
+	float: left;
+}
+
+#psproducts #psstandard button {
+	float: left;
+	margin-top: 170px;
+	margin-right: 20px;
+	margin-left: 95px;
+}
+
+#psproducts #psstandard form {
+	float: left;
+	margin-top: 170px;
 }
 /*-----------------------End College Applications Page-----------------------*/
 
