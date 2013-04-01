@@ -271,6 +271,48 @@ a:hover, a:active {
 
 
 /*-----------------------Start About Us > Team Page-----------------------*/
+.ourteam_content {
+	height: 850px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 25px;
+}
+
+.team_member {
+	height: 190px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.member_photo {
+	float: left;
+	height: 178px;
+	width: 136px;
+}
+
+.member_photo img {
+	border-radius: 10px;
+	height: 173px;
+	width: 136px;
+}
+
+.member_info {
+	width: 820px;
+	padding-left: 10px;
+	float: right;
+}
+
+.member_interests {
+	width: 820px;
+	padding-top: 5px;
+	padding-left: 10px;
+	float: right;	
+}
+
+.member_interests img {
+	height: 20px;
+	padding-left: 60px;
+}
 /*-----------------------End About Us > Team Page-----------------------*/
 
 
