@@ -8,6 +8,24 @@
 		<script type='text/javascript' src='js/jquery/jquery-ui-1.10.1.custom/js/jquery-1.9.1.js'></script>
 		<!--script type='text/javascript' src='js/jquery/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js'></script-->
 		<script type='text/javascript' src='js/script.js'></script>
+		
+		<!--Start Overlay Effect-->
+		<script type="text/javascript">
+			function toggleOverlay(){
+				var overlay = document.getElementById('overlay');
+				var specialBox = document.getElementById('specialBox');
+				overlay.style.opacity = .5;
+				if(overlay.style.display == "block"){
+					overlay.style.display = "none";
+					specialBox.style.display = "none";
+				} else {
+					overlay.style.display = "block";
+					specialBox.style.display = "block";
+				}
+			}
+		</script>
+		<!--End Overlay Effect-->
+		
 	</head>
 
 	<div id='main_container' style='background-color: white; width: 1000px; margin: 0  auto 0 auto;'>
@@ -33,7 +51,7 @@
 				<li id='college_applications' class=''>College Applications</li>
 				<li id='early_guidance' class=''>Early Guidance</li>
 				<li id='success_stories' class=''>Success Stories</li>
-				<li id='admission_resources' class=''>Admission Resources</li>
+				<li id='admission_resources' class=''>Admissions Resources</li>
 			</ul>
 		
 			<div id="contents">
@@ -90,7 +108,7 @@
 					<li>Detailed recommendations on how to improve messaging and structure</li>
 					<li>Follow-up 30-minute phone review</li>
 				</ul>
-				<button type="button"><b>View Sample</b></button>
+				<button type="button" onmousedown="toggleOverlay()"><b>View Sample</b></button>
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 					<input type="hidden" name="cmd" value="_s-xclick">
 					<input type="hidden" name="hosted_button_id" value="PD737GSRF3TJS">
@@ -99,10 +117,20 @@
 				</form>
 			</div>
 		</div>
-
+		
+		<!-- Start Overlay -->
+		<div id="overlay"></div>
+		<!-- End Overlay -->
+		<!-- Start Special Centered Box -->
+		<div id="specialBox">
+			<img src='css/img/sample_overlay.jpg'>
+			<button onmousedown="toggleOverlay()"><b>Close Sample</b></button>
+		</div>
+		<!-- Start Special Centered Box -->
+		
 <!--Lower Content-->
-		<div title='lower content - contact us etc.' class='border_t lower_content'>
-			<ul id="footer" style='width: 857px; margin-left: auto; margin-right: auto; margin-top: 12px;'>
+		<div title='lower content - contact us etc.' class='lower_content'>
+			<ul id="footer">
 				<li>Our Mission</li>
 				<li>Upcoming Events</li>
 				<li>Terms & Conditions</li>

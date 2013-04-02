@@ -8,6 +8,19 @@
 		<script type='text/javascript' src='js/jquery/jquery-ui-1.10.1.custom/js/jquery-1.9.1.js'></script>
 		<!--script type='text/javascript' src='js/jquery/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js'></script-->
 		<script type='text/javascript' src='js/script.js'></script>
+		
+		<script type='text/javascript'>
+			<!--JS Form Validation-->
+			function validateForm()
+			{
+			var x=document.forms["myForm"]["first_name"].value;
+			if (x==null || x=="")
+			  {
+			  alert("First name must be filled out");
+			  return false;
+			  }
+			}
+		</script>
 	</head>
 
 	<div id='main_container'>
@@ -33,20 +46,20 @@
 				<li id='college_applications' class=''>College Applications</li>
 				<li id='early_guidance' class=''>Early Guidance</li>
 				<li id='success_stories' class=''>Success Stories</li>
-				<li id='admission_resources' class=''>Admissions Resources</li>
+				<li id='admission_resources' class=''>Admission Resources</li>
 			</ul>
 		
 			<div id="horizontal-navigation-bar-contents">
 				<div id='about_us_content' class='hide'>
-					<a><p>Our Mission</p></a>
-					<a><p>Our Team</p></a>
+					<a><p>Team</p></a>
+					<a><p>Mission</p></a>
+					<a><p>Why Hire a Mentor?</p></a>
 				</div>
 				<div id='college_applications_content' class='hide '>
-					<p>Complete College Apps Program</p>
-					<p>Essay Review</p>
+					<p>Tab content 2</p>
 				</div>
 				<div id='early_guidance_content' class='hide '>
-					<p>What is Early Guidance?</p>
+					<p>Tab content 3</p>
 				</div>
 				<div id='success_stories_content' class='hide '>
 					<a><p>Our Students' Schools</p></a>
@@ -60,39 +73,30 @@
 			
 		</div>
 
-		<div class='main_content'>
-			<div class=' display_area'>
-				<div title='content 1' class='' id='big_button_1_display'>
-					<a href='aboutus_mission.html' target='_blank'><img src='css/img/memorialglade.jpg' style='max-width: 100%; max-height: 100%;'></a>
-				</div>
-
-				<div title='content 2' class='hide' id='big_button_2_display'>
-					<a href='admissionsresources_keystats.html' target='_blank'><img src='css/img/keystats.jpg' style='max-width: 100%; max-height: 100%;'></a>
-				</div>
-				
-				<div title='content 3' class='hide' id='big_button_3_display'>
-					<a href='admissionsresources_8steps.html' target='_blank'>
-						<img src='css/img/top8tips.jpg' style='max-width: 100%; max-height: 100%; border: 2px solid #d6d5d5'>
-					</a>
-				</div>
+		<div id="contact_form_area">
+			<div id="contact_form">
+				<form name="myForm" onsubmit="return validateForm()" action="MAILTO:hello@readyedgego.com" method="post" enctype="text/plain">
+					<input type="text" name="first_name" id="first_name" value="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
+					<input type="text" name="last_name" id="last_name" value="Last Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
+					</br>
+					<input type="text" name="email" id="email" value="Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
+					<input type="text" name="phone" id="phone" value="Phone" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
+					</br>
+					<select required value="Select Product">
+						<option value="">Select Product</option>
+						<option value="Early Guidance">Early Guidance</option>
+						<option value="Complete College Apps Program">Complete College Apps Program</option>
+						<option value="Essay Review">Essay Review</option>
+					</select>
+					</br>
+					<textarea type="text" name="question" id="question" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>Ask question here.</textarea>
+					</br>
+					<input type="submit" id="submit" value="Submit">
+				</form>
 			</div>
-			
-			<div class=' big_buttons_area' id='big_buttons'>
-				<div title='big button 1' class='big_button ' id='big_button_1'>
-					<img src='css/img/memorialglade_thumbnail.jpg' class='big_button_pressed' style='max-width: 100%; max-height: 100%;'>
-				</div>
-				<div title='big button 2' class='big_button ' id='big_button_2'>
-					<img src='css/img/keystats_thumbnail.jpg' class='big_button_unpressed' style='max-width: 100%; max-height: 100%;'>
-				</div>
-				<div title='big button 3' class='big_button ' id='big_button_3'>
-					<img src='css/img/top8tips_thumbnail.jpg' class='big_button_unpressed' style='max-width: 100%; max-height: 100%; border: 1px solid #d6d5d5'>
-				</div>
+			<div id="sproul_stairs">
+				<img src='css/img/sproul_stairs.jpg'>
 			</div>
-		</div>
-
-		<div class=' products'>
-			<a href='collegeapplications.html'><div title='product 1' class='product_1'></div></a>
-			<div title='product 2' class='product_2'></div>
 		</div>
 		
 		<div title='lower content - contact us etc.' class='lower_content'>
