@@ -727,9 +727,28 @@ div#specialBox {
 }
 /*-----------------End Upcoming Events--------------------*/
 
+/*-----------------Start Terms & Conditions--------------------*/
+#terms {
+	margin: 20px 30px 20px 30px;
+}
+
+#terms h2 {
+	font-size: 1.4em;
+	margin-top: 30px;
+	margin-left: 40px;
+	margin-bottom: 15px;
+}
+
+#terms p {
+	margin-top: 15px;
+	margin-left: 40px;
+	margin-right:40px;
+}
+/*-----------------End Terms & Conditions--------------------*/
+
 /*-----------------Start Privacy--------------------*/
 #privacy {
-	min-height: 100%;
+	height: 1000px;
 	margin: 20px 30px 20px 30px;
 }
 
