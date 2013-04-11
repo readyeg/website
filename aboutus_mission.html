@@ -1,6 +1,7 @@
 <html>
     
-<!--Header-->
+	<meta charset='utf-8'> 
+
 	<head>
 		<!--link rel="stylesheet" type="text/css" href="js/jquery/jquery-ui-1.10.1.custom/css/sunny/jquery-ui-1.10.1.custom.css"-->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -8,24 +9,24 @@
 		<!--script type='text/javascript' src='js/jquery/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js'></script-->
 		<script type='text/javascript' src='js/script.js'></script>
 	</head>
-	
-	<div id='main_container' style='background-color: white; width: 1000px; margin: 0  auto 0 auto;'>
+
+	<div id='main_container'>
 		<div class='page_header '>
 			<div id="logoArea" class=''>
-				<img class='logo' src="css/img/logo.jpg" width="450" height="90" alt="ReadyEdgeGo">
+				<a href='index.html'><img class='logo' src="css/img/logo.jpg" width="450" height="90" alt="ReadyEdgeGo"></a>
 			</div>
-			<div title='readyedgego contact area' id="contactArea" class=''>
+			<div id="contactArea" class='' style='white-space: nowrap;'>
 				<div id="telephoneArea" class=''>
 					<p>1.510.239.<span style="color: #fe8431; font-weight: bold;">EDGE</span> <span style="color: #4e4e4e;">(510.239.3343)</span></p>
 				</div>
 				<div id="contactButtonArea" class=''>
-					<img class='contactButton' src="css/img/contactusbutton.jpg" width="157" height="36" alt="Contact Us">
-					<img class='fb' src="css/img/fb.png" width="36" height="36" alt="Facebook">
+					<a href='contactus.html' target='_blank'><img class='contactButton' src="css/img/contactusbutton.jpg" width="157" height="36" alt="Contact Us"></a>
+					<a href='http://www.facebook.com/ReadyEdgeGo?ref=tn_tnmn' target='_blank'><img class='fb' src="css/img/fb.png" width="36" height="36" alt="Facebook"></a>
 				</div>
 			</div>
 		</div>
-		
-		<!--Start Nav-->
+
+<!--Start Nav-->		
 		<div class='horizontal_navigation_bar ' id='horizontal-tabs'>
 
 			<ul id='tab-names' class='horizontal-tab-names'>
@@ -38,23 +39,24 @@
 		
 			<div id="horizontal-navigation-bar-contents">
 				<div id='about_us_content' class='hide'>
-					<a><p>Our Mission</p></a>
-					<a href='aboutus_team.html'><p>Our Team</p></a>
-					<a><p>Why Hire a Mentor?</p></a>
+					<a href='aboutus_mission.html' target='_blank'><p>Our Mission</p></a>
+					<a href='aboutus_team.html' target='_blank'><p>Our Team</p></a>
 				</div>
 				<div id='college_applications_content' class='hide '>
-					<p>Tab content 2</p>
+					<a href='collegeapplications.html'><p>Complete College Apps Program</p></a>
+					<a href='collegeapplications.html'><p>Essay Review</p></a>
 				</div>
 				<div id='early_guidance_content' class='hide '>
-					<p>Tab content 3</p>
+					<a href='earlyguidance.html'><p>What is Early Guidance?</p></a>
+					<a href='earlyguidance_curriculum.html'><p>Our Curriculum</p></a>
 				</div>
 				<div id='success_stories_content' class='hide '>
-					<a><p>Our Students' Schools</p></a>
-					<a><p>Testimonials</p></a>
+					<a href='successstories_studentschools.html' target='_blank'><p>Our Students' Schools</p></a>
 				</div>
 				<div id='admission_resources_content' class='hide'>
 					<a href='admissionsresources_keystats.html' target='_blank'><p>Key Statistics</p></a>
 					<a href='admissionsresources_8steps.html' target='_blank'><p>8 Steps to Take for College Applications</p></a>
+					<a href='admissionsresources_whyhire.html' target='_blank'><p>Why Hire a Mentor?</p></a>
 				</div>
 			</div>
 			
@@ -62,7 +64,7 @@
 <!--End Nav-->
 
 <!--Top Animation-->		
-		<p id="premaze">We change the high school experience from...</p>
+		<p id="premaze">We change your experience from...</p>
 		<img id="maze" src="css/img/maze.jpg">
 
 <!--Text-->
@@ -76,18 +78,16 @@
 		</div>
 
 
-<!--Lower Content-->
-<!--Lower Content-->
-		<div title='lower content - contact us etc.' class='border_t lower_content'>
-			<ul id="footer" style='width: 857px; margin-left: auto; margin-right: auto; margin-top: 12px;'>
-				<li>Our Mission</li>
-				<li>Upcoming Events</li>
-				<li>Terms & Conditions</li>
-				<li>Privacy</li>
-				<li id="allRightsReserved">ReadyEdgeGo, LLC. All Rights Reserved.</li>
+<!--Footer-->
+		<div class='lower_content'>
+			<ul id="footer">
+				<a href='aboutus_mission.html' target='_blank'><li>Our Mission</li></a>
+				<a href='upcomingevents.html' target='_blank'><li>Upcoming Events</li></a>
+				<a href='terms.html' target='_blank'><li>Terms & Conditions</li></a>
+				<a href='privacy.html' target='_blank'><li>Privacy</li></a>
+				<!--<li id="allRightsReserved">ReadyEdgeGo, LLC. All Rights Reserved.</li>-->
 			</ul>
 		</div>
-
 	</div>
 
 </html>
