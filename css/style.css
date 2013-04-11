@@ -326,8 +326,8 @@ a:hover, a:active {
 
 /*-----------------------Start About Us > Team Page-----------------------*/
 .ourteam_content {
-	height: 850px;
-	margin-top: 10px;
+	height: 1000px;
+	margin-top: 40px;
 	margin-bottom: 5px;
 	margin-left: 25px;
 }
@@ -335,7 +335,7 @@ a:hover, a:active {
 .team_member {
 	height: 190px;
 	width: 100%;
-	margin-bottom: 25px;
+	margin-bottom: 40px;
 }
 
 .member_photo {
