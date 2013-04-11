@@ -500,11 +500,53 @@ div#specialBox {
 /*-----------------------End College Applications Page-----------------------*/
 
 
-/*-----------------------Start College Applications > Premier Details Page-----------------------*/
-/*-----------------------End College Applications > Premier Details Page-----------------------*/
-
-
 /*-----------------------Start Early Guidance Page-----------------------*/
+.eg_main_content {
+	height: 820px
+}
+
+.eg_main_content img {
+	margin-left: 80px;
+}
+
+.eg_points {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.eg_description h2 {
+	margin-left: 100px;
+}
+
+.eg_description ol { 
+	margin-left: 110px; 
+	margin-right:80px; 
+	margin-top:5px; 
+	font-style:italic; 
+	font-size:30px; 
+	color:#FE8431;  
+}
+
+.eg_description ol li p { 
+	padding:8px 8px 0 8px; 
+	font-style:normal; 
+	font-weight: normal; 
+	font-size:16px; 
+}
+
+.eg_description ol li p strong { 
+	font-size:22px; 
+	color: #2d2d2d; 
+	display:block; 
+}
+
+.our_curriculum p {
+	font-size:22px;
+	color: #FE8431;
+	font-weight: bold;
+	float: right;
+	padding-right: 130px;
+}
 /*-----------------------End Early Guidance Page-----------------------*/
 
 
