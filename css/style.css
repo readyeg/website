@@ -289,6 +289,15 @@ a:hover, a:active {
 	width: 450px;
 }
 
+.email_text {
+	font-size: 150%;
+	color: #fe8431;
+	margin-left: 40px;
+	margin-top: 25px;
+	float: left;
+	clear: both;
+}
+
 /*-----------------End Contact Us Page-----------------*/
 
 /*-----------------------Start About Us > Mission Page-----------------------*/
