@@ -397,13 +397,13 @@ a:hover, a:active {
 }
 
 #psvideo {
-	text-align: center;
+	padding-left: 80px;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
 
 #psproducts {
-	height: 500px;
+	height: 520px;
 	background-color: #F1F1F1;
 }
 
