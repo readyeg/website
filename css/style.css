@@ -282,7 +282,7 @@ a:hover, a:active {
 	width: 80px;
 }
 
-#sproul_stairs iframe{
+#sproul_stairs img{
 	margin-top: 10px;
 	margin-right: 30px;
 	float: right;
@@ -381,12 +381,12 @@ a:hover, a:active {
 
 /*-----------------------Start College Applications Page-----------------------*/
 #collegeapp {
-	height: 280px;
-	margin: 20px 30px 20px 30px;
+	height: 150px;
+	margin: 20px 30px 0px 30px;
 }
 
 #collegeapp h2 {
-	font-size: 1.2em;
+	font-size: 1.3em;
 	margin-left: 40px;
 	margin-bottom:0.5em;
 }
@@ -394,18 +394,23 @@ a:hover, a:active {
 #collegeapp p {
 	margin-left: 40px;
 	margin-right:40px;
-	margin-bottom:1.0em;
+}
+
+#psvideo {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 #psproducts {
-	height: 450px;
+	height: 500px;
 	background-color: #F1F1F1;
 }
 
 #psproducts #pspremier, #psproducts #psstandard {
 	padding-top: 10px;
 	width: 410px;
-	height: 95%;
+	height: 94%;
 	background-color: white;
 	border-radius: 15px;
 	border-color: #4e4e4e;
@@ -422,13 +427,22 @@ a:hover, a:active {
 }
 
 #psproducts #pspremier li {
+	font-size: 1.2em;
 	font-weight: bold;
-	font-style: italic;
 	color: #383838;
 	padding: 0 40px 20px 65px;
 	background-image: url('img/goldmedal.jpg');
 	background-position: 5% 0%;
 	background-repeat: no-repeat;
+}
+
+#psproducts #pspremier p {
+	font-size: 2.5em;
+	font-weight: bold;
+	font-style: italic;
+	color: #fe8431;
+	float: right;
+	padding: 0 40px;
 }
 
 #psproducts #psstandard {
@@ -437,8 +451,8 @@ a:hover, a:active {
 }
 
 #psproducts #psstandard li {
+	font-size: 1.2em;
 	font-weight: bold;
-	font-style: italic;
 	color: #383838;
 	padding: 0 40px 20px 65px;
 	background-image: url('img/silvermedal.jpg');
@@ -446,15 +460,20 @@ a:hover, a:active {
 	background-repeat: no-repeat;
 }
 
+#psproducts #psstandard p {
+	font-size: 2.5em;
+	font-weight: bold;
+	font-style: italic;
+	color: #fe8431;
+	float: right;
+	padding: 135px 40px;
+}
+
 #psproducts #pspremier button {
 	float: left;
 	margin-top: 0px;
 	margin-right: 20px;
 	margin-left: 95px;
-}
-
-#psproducts #psstandard form {
-	float: left;
 }
 
 #psproducts #psstandard button {
@@ -469,6 +488,16 @@ a:hover, a:active {
 #psproducts #psstandard form {
 	float: left;
 	margin-top: 170px;
+}
+
+#psgetstarted {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	}
+	
+#psgetstarted h2 {
+	font-weight: normal;
+	font-weight: 2em;
 }
 
 div#overlay {
